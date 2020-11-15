@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <title>Music Quiz</title>
+</head>
+<body>
+    <header>
+        <audio src="./tracks/badRomance.mp4"></audio>
+        <audio src="./tracks/backToBlack.mp4"></audio>
+        <audio src="./tracks/believe.mp4"></audio>
+        <audio src="./tracks/dancingOnMyOwn.mp4"></audio>
+        <audio src="./tracks/dustInTheWind.mp4"></audio>
+        <audio src="./tracks/girlsJustWantToHaveFun.mp4"></audio>
+        <audio src="./tracks/help.mp4"></audio>
+        <audio src="./tracks/inTheEnd.mp4"></audio>
+        <audio src="./tracks/iWaMadEForLovingYou.mp4"></audio>
+        <audio src="./tracks/iWantToBreakFree.mp4"></audio>
+        <audio src="./tracks/knockingOnHeavensDoor.mp4"></audio>
+        <audio src="./tracks/legoHouse.mp4"></audio>
+        <audio src="./tracks/loveStory.mp4"></audio>
+        <audio src="./tracks/myImmortal.mp4"></audio>
+        <audio src="./tracks/oceanEyes.mp4"></audio>
+        <audio src="./tracks/rude.mp4"></audio>
+        <audio src="./tracks/takeOnMe.mp4"></audio>
+        <audio src="./tracks/thriller.mp4"></audio>
+        <audio src="./tracks/Thunderstruck.mp4"></audio>
+        <audio src="./tracks/unconditionally.mp4"></audio>
+        <audio src="./tracks/whatsUp.mp4"></audio>
+        <audio src="./tracks/whenYoureGone.mp4"></audio>
+        <audio src="./tracks/windOFChange.mp4"></audio>
+        <audio src="./tracks/withoutMe.mp4"></audio>
+
+    </header>
+    <main>
+        <section id="menu">
+            <p>By selection 1 Player the game is going to start and once the song start playing you will be able to select the right answer with a click of the mouse, You have 10 seconds per track to answer, you will be asked first for the name of the track and secondly for the singer/group name, you get 5 points per every correct answer and lost 5 per every incorrect one.  </p>
+            <div>
+                <article>
+                    <input type="text" placeholder="Nickname Player 1">
+                    <button>1 Player</button>
+                </article>
+                <article>
+                    <input type="text" placeholder="Nickname Player 2">
+                    <button>2 Players</button>
+                </article>
+            </div>
+            <p>By selecting 2 Players you can challenge a friend, player 1 will be able to select the right answer with a click of the mouse, while Player 2 will have to use the keyboard arrows, arrow left: Answer 1, up 2, down 3, right 4. The player who answer right first get the 5 points, if the player get it wrong lose the 5 points and the other player can still answer and get the points. Wins the player with more points.  </p>
+        </section>
+        <section id="gameSection">
+            <button class="restart">Restart</button>
+            <div>
+                <article class="scores">Score:</article>
+                <article id="timer">0</article>
+                <article class="scores">Player2 Score:</article>
+            </div>
+            <div id="answers">
+                <article>
+                    <button></button>
+                    <button></button>
+                </article>
+                <article>
+                    <button></button>
+                    <button></button>
+                </article>
+                <button id="nextSong">Next Song</button>
+        </div>
+    </section>
+    <section id="endGame">
+        <h1>You totalised ///</h1>
+
+        <button class="restart">Play Again!</button>
+
+    </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
