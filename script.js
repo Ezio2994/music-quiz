@@ -90,7 +90,7 @@ const assignSongs = () => {
     playSongs()
 }
 
-
+tracks.forEach(track => {track.muted = false})
 const playSongs = () => {
     if (song === 1) {
         tracks[0].play()
