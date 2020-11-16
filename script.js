@@ -90,9 +90,7 @@ const assignSongs = () => {
     playSongs()
 }
 
-tracks.forEach(track => {track.muted = true})
 const playSongs = () => {
-    tracks.forEach(track => {track.muted = false})
     if (song === 1) {
         tracks[0].play()
         prepareAnswers()
@@ -567,8 +565,8 @@ const artist = () => {
 }
 
 const runTimer = () => {
-    if (timer.innerHTML !== '10') {
-        timer.innerHTML++
+    if (timer.innerHTML !== '0') {
+        timer.innerHTML--
     } else {
         clearInterval(myvar)
         question = ''
@@ -588,7 +586,7 @@ const startTimer = () => myvar = setInterval(runTimer, 1000)
 nextSong = () => {
     if (turn < 10) {
         turn++
-        timer.innerHTML = 0
+        timer.innerHTML = 10
         answers.forEach(answer => {answer.innerHTML = ''})
         answers.forEach(answer => {answer.style.backgroundColor = 'unset'})
         clicked = false;
@@ -632,7 +630,7 @@ button.onclick = () => {
     answers.forEach(answer => {answer.innerHTML = ''})
     answers.forEach(answer => {answer.style.backgroundColor = 'unset'})
     playAgain[0].style.display = 'none'
-    timer.innerHTML = 0
+    timer.innerHTML = 10
     gameSongs = [];
     turn = 1;
     scoreP1 = 0;
