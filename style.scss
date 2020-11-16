@@ -162,3 +162,27 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        height: 100vh;
+        main {
+            width: 100%;
+
+            #gameSection{
+                .restart{
+                    position: unset;
+                }
+            }
+            
+
+            #answers{
+                article{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
