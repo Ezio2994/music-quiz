@@ -90,8 +90,9 @@ const assignSongs = () => {
     playSongs()
 }
 
-tracks.forEach(track => {track.muted = false})
+tracks.forEach(track => {track.muted = true})
 const playSongs = () => {
+    tracks.forEach(track => {track.muted = false})
     if (song === 1) {
         tracks[0].play()
         prepareAnswers()
